@@ -2,7 +2,7 @@
 //  SnakeView.swift
 //  SnakeGame
 //
-//  Created by Yoorian YeEun Shin on 8/31/16.
+//  Created by Yoorian Shin on 8/31/16.
 //  Copyright © 2016 Yoorian Shin. All rights reserved.
 //
 
@@ -44,7 +44,7 @@ class SnakeView : UIView {
             }
             
             if let fruit = delegate?.pointOfFruitForSnakeView(self) {
-                UIColor.redColor().set()
+                UIColor.blueColor().set()
                 let rect = CGRect(x: fruit.x * w, y: fruit.y * h, width: w, height: h)
                 UIBezierPath(ovalInRect: rect).fill()
             }

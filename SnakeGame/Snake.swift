@@ -2,7 +2,7 @@
 //  Snake.swift
 //  SnakeGame
 //
-//  Created by Yoorian YeEun Shin on 8/31/16.
+//  Created by Yoorian Shin on 8/31/16.
 //  Copyright © 2016 Yoorian Shin. All rights reserved.
 //
 
