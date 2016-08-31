@@ -123,7 +123,7 @@ class MainViewController: UIViewController, SnakeViewDelegate {
         self.snakeView!.setNeedsDisplay()
     }
     
-    @IBAction func start(sender:AnyObject) {
+    @IBAction func start(sender: AnyObject) {
         self.startGame()
     }
     

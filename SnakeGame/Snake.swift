@@ -9,13 +9,13 @@
 import Foundation
 
 struct WorldSize {
-    var width:Int
-    var height:Int
+    var width: Int
+    var height: Int
 }
 
 struct Point {
-    var x:Int
-    var y:Int
+    var x: Int
+    var y: Int
 }
 
 enum Direction: Int {
@@ -62,17 +62,17 @@ enum Direction: Int {
 
 class Snake {
     var worldSize : WorldSize
-    var length:Int = 0
-    var points:Array<Point> = []
+    var length: Int = 0
+    var points: Array<Point> = []
     var direction:Direction = .left
-    var directionLocked:Bool = false
+    var directionLocked: Bool = false
     
-    init(inSize:WorldSize, length inLength:Int) {
+    init(inSize:WorldSize, length inLength: Int) {
         self.worldSize = inSize
         self.length = inLength
         
-        let x:Int = self.worldSize.width / 2
-        let y:Int = self.worldSize.height / 2
+        let x: Int = self.worldSize.width / 2
+        let y: Int = self.worldSize.height / 2
         for i in 0...inLength {
             let p:Point = Point(x:x + i, y: y)
             self.points.append(p)
