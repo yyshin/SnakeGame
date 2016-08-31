@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: UIViewController, SnakeViewDelegate {
     @IBOutlet var startButton:UIButton?
     var snakeView: SnakeView?
-    var timer:NSTimer?
+    var timer: NSTimer?
     
     var snake: Snake?
     var fruit: Point?
@@ -40,7 +40,7 @@ class MainViewController: UIViewController, SnakeViewDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    func swipe (gr:UISwipeGestureRecognizer) {
+    func swipe (gr: UISwipeGestureRecognizer) {
         let direction = gr.direction
         switch direction {
         case UISwipeGestureRecognizerDirection.Right:

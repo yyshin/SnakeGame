@@ -94,7 +94,7 @@ class Snake {
         }
     }
     
-    func increaseLength(inLength:Int) {
+    func increaseLength(inLength: Int) {
         let lastPoint:Point = self.points[self.points.count-1]
         let theOneBeforeLastPoint:Point = self.points[self.points.count-2]
         var x = lastPoint.x - theOneBeforeLastPoint.x
